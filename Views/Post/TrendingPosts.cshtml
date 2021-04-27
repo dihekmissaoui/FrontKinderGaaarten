@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width-device-widh=th" />
+    <title> </title>
+</head>
+<body>
+    <a href="@Url.Action("Index","Post")"> List Post</a>
+    <table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Content</th>
+            <th>likes</th>
+            <th>dislikes</th>
+
+        </tr>
+
+        @foreach (var p in ViewBag.result)
+        {
+            <tr>
+                <td>@p.id</td>
+                <td>@p.title</td>
+                <td>@p.date</td>
+                <td>@p.content</td>
+                <td>@p.likes</td>
+                <td>@p.dislikes</td>
+
+
+
+
+
+
+
+            </tr>
+        }
+
+    </table>
+
+
+
+</body>
+
+
+
+</html>
